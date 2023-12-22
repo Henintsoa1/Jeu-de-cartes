@@ -78,7 +78,7 @@ const game = function(cards) {
     }
 //Conditions du fin de partie:
     if (playerWins > botWins) {
-        console.log("Félicitations, " + playerName + "! Vous avez gagné la partie !");
+        console.log("Félicitations, " + playerName + "! Tu as gagné la partie ! Merci d'avoir joué! Au revoir! ");
     } else if (playerWins < botWins) {
         console.log("GAME OVER, " + playerName + ". L'ordinateur a remporté la partie.");
         askForRematch();
@@ -94,7 +94,7 @@ const askForRematch = function() {
     if (rematch.toUpperCase() === "O") {
         game(cards);
     } else {
-        console.log("Merci d'avoir joué ! Au revoir.");
+        console.log("Merci d'avoir joué ! Au revoir! ");
     }
 };
 
